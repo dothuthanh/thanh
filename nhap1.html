@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="nhap.css">
+    <script src="nhap.js"></script>
+</head>
+<body>
+<div id="dialog">
+    <h3>SHOE PRODUCT MANAGER</h3>
+    <table>
+        <tr><td>STT</td><td><input type="text" id="id"></td></tr>
+        <tr><td>NAME</td><td><input type="text" id="fullname"></td></tr>
+        <tr><td>INFORMATION</td><td><input type="text" id="thongtin"></td></tr>
+        <tr><td>PICTURE</td><td><input type="text" id="avatar" ></td></tr>
+        <tr>
+            <td><button onclick="addProduct()">Add</button></td>
+            <td><button onclick="closeDialog()">Close</button></td>
+        </tr>
+    </table>
+</div>
+<div>
+<h2 style="color:red">PRODUCT MANAGEMENT</h2>
+<a href="#" onclick="openDialog()">them san pham</a>
+<a href="#" onclick="refreshList()">cap nhat danh sach</a>
+<table id="content" border="1">
+    <thead>
+    <tr>
+        <th bgcolor="orange">STT</th>
+        <th bgcolor="orange"><a title="kich thowc de sap xep theo ten" onclick="orderByFullname()">NAME</a></th>
+        <th bgcolor="orange">INFORMATTION</th>
+        <th bgcolor="orange">PICTURE</th>
+        <th bgcolor="orange">MANIPULATION</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+</div>
+</body>
+</html>
